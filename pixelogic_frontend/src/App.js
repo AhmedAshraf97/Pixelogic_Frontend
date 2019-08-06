@@ -6,7 +6,7 @@ import "./styles.css"
 import TextField from './Components/TextField'
 import DropDownList from './Components/DropDownList'
 import PersonalInfo from "./Containers/PersonalInfo"
-
+import BusinessInfo from "./Containers/BusinessInfo"
 function App() {
   return (
     <div className="App">
@@ -15,7 +15,8 @@ function App() {
     <TextField Placeholder="Enter Username" LabelText="Username">  </TextField>
 
 <DropDownList> </DropDownList> */}
-<PersonalInfo> </PersonalInfo>
+{/* <PersonalInfo> </PersonalInfo> */}
+<BusinessInfo></BusinessInfo>
     </div>
   );
 }

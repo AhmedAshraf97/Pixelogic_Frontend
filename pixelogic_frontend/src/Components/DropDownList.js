@@ -10,8 +10,9 @@ import { Dropdown } from 'semantic-ui-react'
 //   value: addressDefinitions.state_abbr[index],
 // }))
 
-const DropdownExampleSearchSelectionTwo = () => (
-//   <Dropdown placeholder='State' search selection options={stateOptions} />
+const DropdownExampleSearchSelectionTwo = (props) => (
+
+  <Dropdown placeholder={props.hint} search selection options={props.options} >
 <div class="dropdown">
   <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
     Select 
@@ -22,6 +23,7 @@ const DropdownExampleSearchSelectionTwo = () => (
     <a class="dropdown-item" href="#">Something else here</a>
   </div>
 </div>
+</Dropdown>
 )
 
 export default DropdownExampleSearchSelectionTwo

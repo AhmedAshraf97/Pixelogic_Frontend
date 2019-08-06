@@ -8,7 +8,9 @@ class PersonalInfo extends React.Component
     {
         return (
             <div className="form">
-            <text> Personal Info </text>
+            <h4> 
+                <text >Personal Info</text> 
+            </h4> 
             <TextField type= "text" Placeholder= "Enter Your Username" > </TextField>
             <TextField type= "text" Placeholder= "Enter Your Email"> </TextField>
             <TextField type= "date" classname ="date" > Enter your Birthdate</TextField>
