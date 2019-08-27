@@ -1,24 +1,35 @@
-import React from 'react';
-import './App.css';
+import React from "react";
+import "./App.css";
 
-import { Button, Placeholder } from 'semantic-ui-react'
-import "./styles.css"
-import TextField from './Components/TextField'
-import DropDownList from './Components/DropDownList'
-import PersonalInfo from "./Containers/PersonalInfo"
-import BusinessInfo from "./Containers/BusinessInfo"
-function App() {
-  return (
-    <div className="App">
-    {/* <Button className="button"> Add Employee </Button>
-    <Button className="button" id="special"> View Employees </Button>
-    <TextField Placeholder="Enter Username" LabelText="Username">  </TextField>
+import { Button, Placeholder } from "semantic-ui-react";
+import "./styles.css";
+import TextField from "./Components/TextField";
+import DropDownList from "./Components/DropDownList";
+import PersonalInfo from "./Containers/PersonalInfo";
+import BusinessInfo from "./Containers/BusinessInfo";
+import EmployeeInfo from "./Containers/EmployeeInfo";
 
-<DropDownList> </DropDownList> */}
-{/* <PersonalInfo> </PersonalInfo> */}
-<BusinessInfo></BusinessInfo>
-    </div>
-  );
+import axios from "axios";
+
+class App extends React.Component {
+  state = {
+    departments_name: [],
+    Employees: []
+  };
+
+  render() {
+    return (
+      <div className="App">
+        <a href="/AddEmployees">
+          <Button className="button"> Add Employee </Button>
+        </a>
+        <Button className="button" id="special">
+          {" "}
+          View Employees{" "}
+        </Button>
+        {/* <EmployeeInfo></EmployeeInfo> */}
+      </div>
+    );
+  }
 }
-
 export default App;
